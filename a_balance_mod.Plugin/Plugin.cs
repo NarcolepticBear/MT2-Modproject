@@ -24,7 +24,10 @@ namespace a_balance_mod.Plugin
                     // Be sure to include any new json files if you add more.
                     c.AddMergedJsonFile(
                         "json/plugin.json",
-                        "json/global.json"
+                        "json/global.json",
+                        "json/steelenhancer.json",
+                        "json/greeddragon.json",
+                        "json/monstergreeddragon.json"
                     );
                 }
             );
