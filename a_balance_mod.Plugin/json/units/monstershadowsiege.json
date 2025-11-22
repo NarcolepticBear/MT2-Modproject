@@ -1,0 +1,15 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "Shadowsiege",
+            "override": "replace",
+            "size": 5,
+            "health": 250,
+            "attack_damage": 300
+            
+        }
+        
+    ]
+    
+}

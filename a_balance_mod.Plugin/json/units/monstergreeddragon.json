@@ -1,0 +1,41 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "Characters": [
+    {
+      "id": "MonsterGreedDragon",
+      "override": "replace",
+      "health": 300,
+      "triggers": [
+        "@BuffUnitOnFeed"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuffUnit",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@TenAttackMinusTwoHealth",
+      "param_int_3": 0
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TenAttackMinusTwoHealth",
+      "bonus_damage": 10,
+      "bonus_hp": -2
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BuffUnitOnFeed",
+      "trigger": "on_feed",
+      "descriptions": {
+        "english": "Apply +[@TenAttackMinusTwoHealth.bonus_damage][attack] and [@TenAttackMinusTwoHealth.bonus_hp][health] on feed."
+      },
+      "effects": [
+        "@BuffUnit"
+      ]
+    }
+  ]
+}
