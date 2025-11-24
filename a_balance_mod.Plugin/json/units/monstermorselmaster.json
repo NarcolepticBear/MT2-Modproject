@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
-  "Characters": [
+  "characters": [
     {
       "id": "MonsterDevourer",
       "override": "replace",
@@ -14,14 +14,14 @@
       "id": "BuffMorselmaster",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "@FourAttack",
-      "param_int": 4
+      "param_upgrade": "@FiveAttack",
+      "param_int": 5
     }
   ],
   "upgrades": [
     {
-      "id": "FourAttack",
-      "bonus_damage": 4
+      "id": "FiveAttack",
+      "bonus_damage": 5
     }
   ],
   "character_triggers": [
@@ -29,7 +29,7 @@
       "id": "BuffMorselmasterOnFoodSpawn",
       "trigger": "on_food_spawn",
       "descriptions": {
-        "english": "Apply +4[attack]."
+        "english": "Apply +5[attack]."
       },
       "effects": [
         "@BuffMorselmaster"

@@ -24,12 +24,21 @@ namespace a_balance_mod.Plugin
                     // Be sure to include any new json files if you add more.
                     c.AddMergedJsonFile(
                         "json/global.json",
-                        "json/units/greeddragon.json",
-                        "json/units/monstermorselmaster.json",
+                        //"json/units/greeddragon.json",
+                        "json/units/monstereelgorgon.json",
                         "json/spells/hallowedhalls.json",
                         "json/spells/hoarfrosteffigy.json",
+                        "json/spells/dantesinferno.json",
+                        "json/spells/iceandpyre.json",
+                        "json/spells/rootseeds.json",
                         "json/units/shadowsiege.json",
-                        //"json/units/monstershadowsiege.json"
+                        "json/units/monstershadowsiege.json",
+                        "json/units/monstermorselmaster.json",
+                        "json/units/draff.json",
+                        "json/units/guardoftheunnamed.json",
+                        "json/units/monsteranimusofwill.json",
+                        "json/champions/wyldentenstranglertwo.json",
+                        "json/champions/wyldentenstranglerthree.json"
                     );
                 }
             );

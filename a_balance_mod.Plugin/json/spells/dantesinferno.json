@@ -2,11 +2,9 @@
     "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
     "cards": [
         {
-            "id": "GreedDragon",
+            "id": "DantesInferno",
             "override": "replace",
             "cost": 1
         }
-        
     ]
-    
 }

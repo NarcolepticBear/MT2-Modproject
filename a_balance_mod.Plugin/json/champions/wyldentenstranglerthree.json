@@ -1,0 +1,38 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "WyldentenRootOnStrike3",
+            "override": "append",
+            "trigger_upgrades": [
+                "@GiveRegenToFriendlyOnWyldenten3Slay"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "GiveRegenToFriendlyOnWyldenten3SlayEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "regen",
+                    "count": 6
+                }
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "GiveRegenToFriendlyOnWyldenten3Slay",
+            "trigger": "on_kill",
+            "descriptions": {
+                "english": "Apply regen [effect0.status0.power] to friendly units."
+            },
+            "effects": [
+                "@GiveRegenToFriendlyOnWyldenten3SlayEffect"
+            ]
+        }
+    ]
+}

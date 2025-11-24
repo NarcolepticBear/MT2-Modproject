@@ -1,0 +1,38 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
+    {
+      "id": "MonsterRuneboundGuardian",
+      "override": "append",
+      "triggers": [
+        "@GiveArmorToFriendlyOnGuardianIncant"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GiveArmorToFriendlyOnGuardianIncantEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+            "status": "armor",
+            "count": 1
+        }
+    ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "GiveArmorToFriendlyOnGuardianIncant",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Apply [armor] [effect0.status0.power] to friendly units."
+      },
+      "effects": [
+        "@GiveArmorToFriendlyOnGuardianIncantEffect"
+      ]
+    }
+  ]
+}

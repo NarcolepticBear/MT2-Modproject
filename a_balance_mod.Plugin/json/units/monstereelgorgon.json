@@ -1,12 +1,11 @@
 {
     "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
-    "cards": [
+    "characters": [
         {
-            "id": "GreedDragon",
+            "id": "MonsterEelGorgon",
             "override": "replace",
-            "cost": 1
+            "health": 20,
+            "attack_damage": 15
         }
-        
     ]
-    
 }
