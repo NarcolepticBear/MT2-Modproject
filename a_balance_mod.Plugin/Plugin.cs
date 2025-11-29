@@ -31,14 +31,25 @@ namespace a_balance_mod.Plugin
                         "json/spells/dantesinferno.json",
                         "json/spells/iceandpyre.json",
                         "json/spells/rootseeds.json",
+                        "json/spells/awokencycleoflife.json",
+                        "json/spells/torch.json",
+                        "json/spells/voidbinding.json",
                         "json/units/shadowsiege.json",
                         "json/units/monstershadowsiege.json",
                         "json/units/monstermorselmaster.json",
                         "json/units/draff.json",
                         "json/units/guardoftheunnamed.json",
                         "json/units/monsteranimusofwill.json",
+                        "json/units/monsterpyreblooded.json",
+                        "json/units/monsterovergorger.json",
+                        "json/units/monsterbattledancer.json",
+                        "json/units/monsterbountystalker.json",
+                        "json/units/scrivenerability.json",
+                        "json/units/pyrebloodedability.json",
+                        "json/units/consumerofcrownsability.json",
                         "json/champions/wyldentenstranglertwo.json",
-                        "json/champions/wyldentenstranglerthree.json"
+                        "json/champions/wyldentenstranglerthree.json",
+                        "json/cultofthelambevent.json"
                     );
                 }
             );

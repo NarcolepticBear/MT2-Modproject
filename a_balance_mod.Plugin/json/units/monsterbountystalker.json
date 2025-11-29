@@ -1,0 +1,36 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "BountyStalker",
+            "override": "replace",
+            "attack_damage": 12,
+            "triggers": ["@BountystalkerDeath"]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "BountystalkerDeath",
+            "trigger": "on_death",
+            "effects": ["@BountystalkerDeathEffect"],
+            "descriptions": {
+                "english": "+12[attack] permanently."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "BountystalkerDeathEffect",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "param_upgrade": "@BountyStalkerUpgrade",
+            "param_int_3": 2
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "BountyStalkerUpgrade",
+            "bonus_damage": 12
+        }
+    ]
+}

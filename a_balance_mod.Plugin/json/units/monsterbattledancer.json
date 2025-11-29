@@ -1,0 +1,49 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterBattleDancer",
+            "override": "replace",
+            "triggers": ["@BattledancerShift"]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "BattledancerShift",
+            "trigger": "on_shift",
+            "descriptions": {
+                "english": "Gain [valor] 4."
+            },
+            "effects": [
+                "@BattledancerShiftEffect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "BattledancerShiftEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects":[
+                {
+                    "status": "valor",
+                    "count": 4
+                }
+            ],
+            "additional_tooltips": ["@ValorTooltip"]
+        }
+    ],
+    "additional_tooltips": [
+        {
+            "id": "ValorTooltip",
+            "titles": {
+                "english": "Valor"
+            },
+            "descriptions": {
+                "english": "+1[attack] per stack. Raise [armor] to stack count if this is the front unit after combat."
+            },
+            "style": "positive"
+        }
+    ]
+}

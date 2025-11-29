@@ -1,0 +1,10 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "AwokenCycleOfLife",
+            "override": "replace",
+            "bonus_hp": 15
+        }
+    ]
+}

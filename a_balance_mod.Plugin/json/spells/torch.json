@@ -1,0 +1,19 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "StarterTorch",
+            "override": "replace",
+            "effects": ["@DealFourDamage"]
+        }
+    ],
+    "effects": [
+        {
+            "id": "DealFourDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_int": 4
+        }
+    ]
+}
