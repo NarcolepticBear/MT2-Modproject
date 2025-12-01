@@ -1,0 +1,11 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "FlickerAddBurnoutToSelf3",
+            "override": "replace",
+            "bonus_damage": 240,
+            "bonus_hp": 240
+        }
+    ]
+}

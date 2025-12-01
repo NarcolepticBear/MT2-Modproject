@@ -24,7 +24,6 @@ namespace a_balance_mod.Plugin
                     // Be sure to include any new json files if you add more.
                     c.AddMergedJsonFile(
                         "json/global.json",
-                        //"json/units/greeddragon.json",
                         "json/units/monstereelgorgon.json",
                         "json/spells/hallowedhalls.json",
                         "json/spells/hoarfrosteffigy.json",
@@ -36,10 +35,11 @@ namespace a_balance_mod.Plugin
                         "json/spells/voidbinding.json",
                         "json/units/shadowsiege.json",
                         "json/units/monstershadowsiege.json",
-                        "json/units/monstermorselmaster.json",
+                        //"json/units/monstermorselmaster.json",
                         "json/units/draff.json",
                         "json/units/guardoftheunnamed.json",
                         "json/units/monsteranimusofwill.json",
+                        "json/units/monstercuttlehex.json",
                         "json/units/monsterpyreblooded.json",
                         "json/units/monsterovergorger.json",
                         "json/units/monsterbattledancer.json",
@@ -49,7 +49,25 @@ namespace a_balance_mod.Plugin
                         "json/units/consumerofcrownsability.json",
                         "json/champions/wyldentenstranglertwo.json",
                         "json/champions/wyldentenstranglerthree.json",
-                        "json/cultofthelambevent.json"
+                        "json/champions/queenrally2.json",
+                        "json/champions/queenrally3.json",
+                        "json/champions/penumbratrample1.json",
+                        "json/champions/penumbratramble2.json",
+                        "json/champions/penumbratramble3.json",
+                        "json/champions/flickerburnout2.json",
+                        "json/champions/flickerburnout3.json",
+                        "json/champions/flickerharvesttrigger1.json",
+                        "json/champions/flickerharvesttrigger2.json",
+                        "json/champions/flickerharvesttrigger3.json",
+                        "json/champions/arduhnhammer1.json",
+                        "json/champions/arduhnhammer2.json",
+                        "json/champions/solgardfrostbite1.json",
+                        "json/champions/solgardfrostbite2.json",
+                        "json/champions/solgardfrostbite3.json",
+                        "json/champions/boletetrample2.json",
+                        "json/champions/penumbraarchitect1.json",
+                        "json/champions/penumbraarchitect2.json",
+                        "json/champions/penumbraarchitect3.json"
                     );
                 }
             );

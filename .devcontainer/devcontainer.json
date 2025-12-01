@@ -5,7 +5,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csdevkit"
       ],
       "settings": {
         "dotnet.defaultSolution": "**/*.sln",

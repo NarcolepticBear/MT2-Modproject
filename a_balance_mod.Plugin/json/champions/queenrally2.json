@@ -1,0 +1,44 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "ShardtailRallyBuff2",
+            "override": "replace",
+            "bonus_damage": 0,
+            "trigger_upgrades": [
+                "@ShardtailRally2"
+            ],
+            "status_effect_upgrades": [
+                {
+                    "status":"multistrike",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "ShardtailRally2Upgrade",
+            "bonus_damage": 10
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ShardtailRally2",
+            "trigger": "card_monster_played",
+            "descriptions": {
+                "english": "+10[attack]"
+            },
+            "effects": [
+                "@ShardtailRally2Effect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ShardtailRally2Effect",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "param_upgrade": "@ShardtailRally2Upgrade",
+            "param_int_3": 0
+        }
+    ]
+}
