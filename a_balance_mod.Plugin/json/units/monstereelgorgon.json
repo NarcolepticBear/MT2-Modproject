@@ -5,7 +5,7 @@
             "id": "MonsterEelGorgon",
             "override": "replace",
             "health": 20,
-            "attack_damage": 15
+            "attack_damage": 20
         }
     ]
 }

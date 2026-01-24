@@ -1,0 +1,26 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "ElectricityChamber_Upgrade",
+            "override": "replace",
+            "trigger_upgrades": ["@ElectricityChamberReanimate"]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ElectricityChamberReanimate",
+            "trigger": "on_reanimated",
+            "effects": ["@ElectricityChamberReanimateEffect"]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ElectricityChamberReanimateEffect",
+            "name": "CardEffectAttackTargetsWithSelfUnit",
+            "target_mode": "front_in_room",
+            "target_team": "heroes",
+            "hide_tooltip": true
+        }
+    ]
+}

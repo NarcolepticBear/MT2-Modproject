@@ -6,8 +6,13 @@
             "override": "replace",
             "size": 5,
             "health": 250,
-            "attack_damage": 300
-            
+            "attack_damage": 300,
+            "starting_status_effects": [
+                {
+                    "status": "scorch",
+                    "count": 2
+                }
+            ]
         }
         
     ]

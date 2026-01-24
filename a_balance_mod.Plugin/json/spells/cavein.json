@@ -1,0 +1,49 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "CaveIn",
+            "override": "replace",
+            "effects": [
+                {
+                    "id": "@CaveinDamageEffect"
+                }
+            ],
+            "triggers": [
+                {
+                    "id": "@CaveinSlayTrigger"
+                }
+            ],
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to all enemies.[halfbreak]Slay: Summon a Rubble Morsel."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "CaveinDamageEffect",
+            "name": "CardEffectDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 30
+        },
+        {
+            "id": "CaveinSlayEffect",
+            "name": "CardEffectSpawnMonster",
+            "param_character":"MorselRubbleRaiser",
+            "target_mode": "back_in_room",
+            "target_team": "monsters"
+        }
+    ],
+    "card_triggers": [
+        {
+            "id": "CaveinSlayTrigger",
+            "trigger": "on_kill",
+            "effects": [
+                {
+                    "id": "@CaveinSlayEffect"
+                }
+            ]
+        }
+    ]
+}

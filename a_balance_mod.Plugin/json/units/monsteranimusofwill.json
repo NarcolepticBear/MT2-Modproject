@@ -12,9 +12,9 @@
     "character_triggers": [
         {
             "id": "CultivateOnAnimusSlay",
-            "trigger": "on_kill",
+            "trigger": "on_attacking",
             "descriptions": {
-                "english": "Cultivate 2."
+                "english": "Cultivate 1."
             },
             "effects": [
                 "@CultivateOnAnimusSlayEffect"
@@ -28,15 +28,15 @@
             "target_mode": "weakest",
             "target_team": "monsters",
             "target_character_excluded_subtypes": ["SubtypesData_Snack"],
-            "param_upgrade": "@CultivateTwo",
+            "param_upgrade": "@CultivateOne",
             "additional_tooltips": ["@CultivateTooltip"]
         }
     ],
     "upgrades": [
         {
-            "id": "CultivateTwo",
-            "bonus_damage": 2,
-            "bonus_hp": 2
+            "id": "CultivateOne",
+            "bonus_damage": 1,
+            "bonus_hp": 1
         }
     ],
     "additional_tooltips": [
