@@ -1,0 +1,37 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterUnstableInfery",
+            "override": "replace",
+            "triggers": [
+                {
+                    "id": "@MoltingImpSummonTrigger"
+                }
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "MoltingImpSummonTrigger",
+            "trigger": "on_spawn",
+            "effects": [
+                {
+                    "id": "@MoltingImpSummonEffect"
+                }
+            ],
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to enemy units."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "MoltingImpSummonEffect",
+            "name": "CardEffectDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 15
+        }
+    ]
+}

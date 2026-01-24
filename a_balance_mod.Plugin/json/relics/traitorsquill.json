@@ -1,0 +1,14 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "relics": [
+        {
+            "id": "DamageOnConsumeArtifact",
+            "clone_id": "DamageOnConsumeArtifact",
+            "override": "replace",
+            "type": "collectable",
+            "names": {
+                "english": "Test to see if name changes"
+            }
+        }
+    ]
+}

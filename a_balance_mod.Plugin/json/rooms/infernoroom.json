@@ -1,0 +1,47 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "InfernoRoom",
+            "override": "replace",
+            "effects": [
+                {
+                    "id": "@InfernoRoomAttach"
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "InfernoRoomAttach",
+            "name": "CardEffectAttachTrainRoomAttachment",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_upgrade": "@InfernoRoomUpgrade"
+        },
+        {
+            "id": "InfernoRoomDamageEffect",
+            "name": "CardEffectDamage",
+            "param_int": 40,
+            "target_mode": "room",
+            "target_team": "both"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "InfernoRoomUpgrade",
+            "room_modifier_upgrades": ["@InfernoRoomDamage"]
+        }
+    ],
+    "room_modifiers": [
+        {
+            "id": "InfernoRoomDamage",
+            "name": "RoomStateAddEffectPreCombatModifier",
+            "param_effects": [
+                {
+                    "id": "@InfernoRoomDamageEffect"
+                }
+            ]
+        }
+    ]
+}

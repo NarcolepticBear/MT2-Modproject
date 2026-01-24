@@ -1,0 +1,22 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "clone_id": "68a9b977-3407-4128-bf35-245fd92f8e2b",
+            "override": "replace",
+            "id": "PyreHeartNew",
+            "names": {
+                "english": "New Pyre"
+            },
+            "descriptions": {
+                "english": "A description"
+            },
+            "starting_status_effects": [
+                {
+                    "status":"armor",
+                    "count": 5
+                }
+            ]
+        }
+    ]
+}

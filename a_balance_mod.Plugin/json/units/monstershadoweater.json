@@ -1,0 +1,52 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterGlutton",
+            "override": "append",
+            "ability": "@ShadoweaterAbility"
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ShadoweaterHunger",
+            "trigger": "on_food_spawn",
+            "descriptions": {
+                "english": "Feed on units with [eaten]"
+            },
+            "effects": [
+                "@ShadoweaterHungerEffect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ShadoweaterHungerEffect",
+            "name": "CardEffectFeederRules",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_bool": true,
+            "param_int": 0
+        }
+    ],
+    "cards": [
+        {
+            "id": "ShadoweaterAbility",
+            "names": {
+                "english": "Shadoweater Ability Name",
+                "chinese": "示例能力"
+            },
+            "descriptions": {
+                "english": "Feed on units with [eaten]"
+            },
+            "is_an_ability": true,
+            "cooldown": 1,
+            "targetless": true,
+            "targets_room": true,
+            "card_type": "spell",
+            "effects": [
+                "@ShadoweaterHungerEffect"
+            ]
+        }
+    ]
+}

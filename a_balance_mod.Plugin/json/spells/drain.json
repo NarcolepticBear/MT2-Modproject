@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "drain",
+            "override": "replace",
+            "effects": [
+                {
+                    "id": "@DrainSapEffect"
+                },
+                {
+                    "id": "@DrainDiscardEffect"
+                }
+            ],
+            "descriptions": {
+                "english": "Apply [sap] [effect0.status0.power]. [halfbreak]Discard [effect1.power]."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "DrainSapEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status": "debuff",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "DrainDiscardEffect",
+            "name": "CardEffectChooseDiscard",
+            "target_mode": "hand",
+            "param_int": 1
+        }
+    ]
+}
