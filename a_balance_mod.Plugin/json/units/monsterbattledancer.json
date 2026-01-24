@@ -12,7 +12,7 @@
             "id": "BattledancerShift",
             "trigger": "on_shift",
             "descriptions": {
-                "english": "Gain [valor] 4."
+                "english": "Gain [valor] [effect0.status0.power]."
             },
             "effects": [
                 "@BattledancerShiftEffect"
@@ -30,8 +30,7 @@
                     "status": "valor",
                     "count": 4
                 }
-            ],
-            "additional_tooltips": ["@ValorTooltip"]
+            ]
         }
     ],
     "additional_tooltips": [

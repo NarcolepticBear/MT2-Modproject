@@ -4,7 +4,7 @@
         {
             "id": "Underlegion1FunguyOnSlay2",
             "override": "replace",
-            "bonus_damage": 80
+            "bonus_damage": 70
         }
     ]
 }
