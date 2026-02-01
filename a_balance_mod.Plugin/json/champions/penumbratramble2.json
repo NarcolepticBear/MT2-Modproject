@@ -1,0 +1,11 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "PenumbraIncreaseStatsCapacity2",
+            "override": "replace",
+            "bonus_damage": 130,
+            "bonus_hp": 60
+        }
+    ]
+}

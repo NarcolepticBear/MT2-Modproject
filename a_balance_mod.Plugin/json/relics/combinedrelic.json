@@ -1,0 +1,71 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "relics": [
+        {
+            "id": "ManyUpgradesRelic",
+            "type": "collectable",
+            "names": {
+                "english": "aaa Test Relic"
+            },
+            "descriptions": {
+                "english": "aaa Test Relic Description"
+            },
+            "lore_tooltips": [
+                {
+                    "english": "Lore tooltip for ManyUpgradesRelic"
+                }
+            ],
+            "lore_style": "herzal",
+            "relic_effects": [
+                {
+                    "id": "@ManyUpgradesRelicEffect1"
+                },
+                {
+                    "id": "@ManyUpgradesRelicEffect2"
+                },
+                {
+                    "id": "@ManyUpgradesRelicEffect3"
+                }
+            ],
+            "icon": "@ManyUpgradesRelicIcon",
+            "icon_small": "@ManyUpgradesRelicIconSmall",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": null,
+                        "pools": [
+                            "null"
+                        ],
+                        "rarity": "uncommon"
+                    }
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ManyUpgradesRelicIcon",
+            "path": "textures/card_art/gas.png"
+        },
+        {
+            "id": "ManyUpgradesRelicIconSmall",
+            "path": "textures/card_art/gas.png"
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "ManyUpgradesRelicEffect1",
+            "name": "RelicEffectAddUnitUpgradeSlot"
+        },
+        {
+            "id": "ManyUpgradesRelicEffect2",
+            "name": "RelicEffectAddSpellUpgradeSlot"
+        },
+        {
+            "id": "ManyUpgradesRelicEffect3",
+            "name": "RelicEffectModifyMerchantAllCosts",
+            "param_int": 20,
+            "param_float": 0.20
+        }
+    ]
+}

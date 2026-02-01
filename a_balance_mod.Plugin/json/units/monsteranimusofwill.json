@@ -1,0 +1,53 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterAnimusBow",
+            "override": "replace",
+            "triggers": [
+                "@CultivateOnAnimusSlay"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "CultivateOnAnimusSlay",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Cultivate 1."
+            },
+            "effects": [
+                "@CultivateOnAnimusSlayEffect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "CultivateOnAnimusSlayEffect",
+            "name": "CardEffectAddTempCardUpgradeToUnits",
+            "target_mode": "weakest",
+            "target_team": "monsters",
+            "target_character_excluded_subtypes": ["SubtypesData_Snack"],
+            "param_upgrade": "@CultivateOne",
+            "additional_tooltips": ["@CultivateTooltip"]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "CultivateOne",
+            "bonus_damage": 1,
+            "bonus_hp": 1
+        }
+    ],
+    "additional_tooltips": [
+        {
+            "id": "CultivateTooltip",
+            "titles": {
+                "english": "Cultivate"
+            },
+            "descriptions": {
+                "english": "Increase the [attack] and [health] of a non-morsel unit with the lowest health by the cultivate value."
+            }
+        }
+    ]
+}

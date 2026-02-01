@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterEpicure",
+            "override": "replace",
+            "triggers": [
+                "@OvergorgerGorge"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "OvergorgerGorge",
+            "trigger": "on_feed",
+            "effects": [
+                "@OvergorgerGorgeEffect"
+            ],
+            "descriptions": {
+                "english": "+2[attack] and +1[health] permanently."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "OvergorgerGorgeEffect",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "param_upgrade": "@OvergorgerUpgrade",
+            "param_int_3": 2
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "OvergorgerUpgrade",
+            "bonus_damage": 2,
+            "bonus_hp": 1
+        }
+    ]
+}

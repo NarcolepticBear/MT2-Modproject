@@ -1,0 +1,11 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "characters": [
+        {
+            "id": "MonsterEelGorgon",
+            "override": "replace",
+            "health": 20,
+            "attack_damage": 20
+        }
+    ]
+}

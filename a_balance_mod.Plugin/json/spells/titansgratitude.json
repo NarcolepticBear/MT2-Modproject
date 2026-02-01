@@ -1,0 +1,34 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "TitansGratitude",
+            "override": "replace",
+            "effects": [
+                {
+                    "id": "@TitansGratitudeDamageEffect"
+                },
+                {
+                    "id": "@TitansGratitudeDiscardEffect"
+                }
+            ],
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to the front enemy unit. [halfbreak]Discard [effect1.power]."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "TitansGratitudeDamageEffect",
+            "name": "CardEffectDamage",
+            "target_mode": "front_in_room",
+            "target_team": "heroes",
+            "param_int": 50
+        },
+        {
+            "id": "TitansGratitudeDiscardEffect",
+            "name": "CardEffectChooseDiscard",
+            "param_int": 1
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "upgrades": [
+        {
+            "id": "PenumbraCapacityOnKill3",
+            "override": "replace",
+            "bonus_damage": 70,
+            "bonus_hp": 15,
+            "trigger_upgrades": [
+                "@PenumbraArchitectCapacityUpgrade3",
+                "@PenumbraHunger3"
+            ]
+        },
+        {
+            "id": "PenumbraHungerUpgrade3",
+            "bonus_damage": 10
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "PenumbraArchitectCapacityUpgrade3",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "+[effect0.power][capacity] on this floor."
+            },
+            "effects": [
+                "@PenumbraArchitectCapacityUpgrade3Effect"
+            ]
+        },
+        {
+            "id": "PenumbraHunger3",
+            "trigger": "on_food_spawn",
+            "descriptions": {
+                "english": "+10[attack]."
+            },
+            "effects": [
+                "@PenumbraHunger3Effect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PenumbraArchitectCapacityUpgrade3Effect",
+            "name": "CardEffectAdjustRoomCapacity",
+            "target_mode": "room",
+            "param_int": 4,
+            "additional_tooltips": [
+                "@CapacityTooltip"
+            ]
+        },
+        {
+            "id": "PenumbraHunger3Effect",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "param_upgrade": "@PenumbraHungerUpgrade3",
+            "param_int": 10
+        }
+    ]
+}

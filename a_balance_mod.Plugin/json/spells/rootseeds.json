@@ -1,0 +1,24 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "StarterBuff",
+            "override": "append",
+            "effects": [
+                "@Restore1Health"
+            ],
+            "descriptions": {
+                "english": "Restore [effect2.power] health.[halfbreak]Apply +[effect0.upgrade.bonusdamage][attack].[halfbreak]Draw +[effect1.power] next turn."
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "Restore1Health",
+            "name": "CardEffectHeal",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "param_int": 1
+        }
+    ]
+}

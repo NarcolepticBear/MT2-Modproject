@@ -5,5 +5,17 @@
       "id": "Consume",
       "name": "CardTraitExhaustState"
     }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "CapacityTooltip",
+      "titles": {
+        "english": "[capacity] Capacity"
+      },
+      "descriptions": {
+        "english": "Units can only be summoned to a floor if it has enough capacity."
+      },
+      "style": 8
+    }
   ]
 }

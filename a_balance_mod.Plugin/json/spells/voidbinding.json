@@ -1,0 +1,53 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "VoidBinding",
+            "override": "replace",
+            "effects": [
+                "@VoidbindingDamageshield",
+                "@VoidbindingRage",
+                "@VoidbindingEmberdrain"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "VoidbindingDamageshield",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status":"damage shield",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "VoidbindingRage",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status":"buff",
+                    "count": 6
+                }
+            ]
+        },
+        {
+            "id": "VoidbindingEmberdrain",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status":"scorch",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+    
+}
