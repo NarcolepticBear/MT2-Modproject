@@ -72,8 +72,6 @@ namespace a_balance_mod.Plugin
                         "json/champions/penumbraarchitect2.json",
                         "json/champions/penumbraarchitect3.json",
                         "json/equipment/spikyskin.json",
-                        "json/rooms/electricitychamber.json",
-                        "json/rooms/electricitychamberupgrade.json",
                         "json/relics/combinedrelic.json",
                         "json/relics/traitorsquill.json",
                     );
